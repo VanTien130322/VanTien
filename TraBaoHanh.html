@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>TangManKhiMuaPC</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="Images/AntKey.png" height="100%">
+</head>
+<body>
+	<!-- Trên cùng -->
+	<div class="container-fluid bgcolor-red">
+	<div class="container">
+	<div class="row">
+		<div class="col-1 color" style="border-radius: 5px"><img src="Images/Artboard 7-8.png" alt="" class="img-75"></div>
+		<div class="col-5"><div class="search-box"><input type="text" placeholder="Bạn cần tìm gì?"></div></div>
+		<div class="col-4"></div>
+		<div class="col-2"></div>
+	</div>	
+	</div>
+	</div>
+	<div class="container-fluid bgcolor-red">
+	<div class="container">
+	<div class="row">
+	<div class="col-12">
+	<ul class="menu">
+      <li><a href="GearVN.html">Sản Phẩm</a></li>
+      <li><a href="TinCongNghe.html">Tin công nghệ</a></li>
+      <li><a href="DichVuSuaChua.html">Dịch vụ sửa chữa</a></li>
+      <li><a href="DichVuKiThuatTaiNha.html">Dịch vụ kỹ thuật tại nhà</a></li>
+  	  <li><a href="#">Thu cũ đổi mới</a></li>
+	  <li><a href="TraBaoHanh.html">Tra cứu bảo hành</a></li>
+    </ul>
+	</div>
+	</div>
+	</div>
+	</div>
+	<!-- chữ chạy -->
+	<div class="container">
+	<div class="row">
+		<div class="col-12">
+		<marquee behavior="scroll" direction="right" scrollamount="5" loop="2" height="200px"></marquee>
+		</div>
+	</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-3"></div>
+			<div class="col-7" style="flex-direction: column"> <!-- Chuyển sang dọc -->
+				<!-- Tab Menu -->
+  <div class="tabs">
+    <div id="tab-bh" class="tab active-tab" onclick="switchTab('bh')">Tra cứu phiếu bảo hành</div>
+    <div id="tab-imei" class="tab" onclick="switchTab('imei')">Tra cứu IMEI</div>
+  </div>
+  <!-- Form: Phiếu bảo hành -->
+	<div id="form-bh" class="form-section active">
+    <div class="info-text">
+      Quý khách vui lòng nhập cả 2 trường thông tin (bắt buộc) để tra cứu trạng thái của phiếu bảo hành.
+    </div>
+    <form action="/search-warranty" method="post">
+      <div class="input-group">
+        <input type="text" name="phone" placeholder="Số điện thoại" required>&nbsp;
+        <input type="text" name="code" placeholder="Mã phiếu bảo hành" required>
+        <button type="submit">Tra cứu</button>
+      </div>
+    </form>
+  </div>
+  <!-- Form: IMEI -->
+ <div id="form-imei" class="form-section">
+    <form action="/search-imei" method="post">
+      <div class="input-group">
+        <input type="text" name="imei" placeholder="Mã IMEI / Serial Number" required>
+        <button type="submit">Tra cứu</button>
+      </div>
+      <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+    </form>
+  </div>
+
+			</div>
+			<div class="col-2"></div>
+		</div>
+	</div>
+	</body>
+	<div class="container">
+	<div class="row">
+		<div class="col-12">
+		<marquee behavior="scroll" direction="right" scrollamount="5" loop="2" height="300px"></marquee>
+		</div>
+	</div>
+	</div>
+	<footer>
+	
+		<div class="container">
+		<div class="row">
+			<div class="col-3 col-3-footer">
+					<h4>Arena Tân Bình</h4>
+					<p>Số 6 Tân Kỳ Tân Quý (gần Etown), </p><p> Q.Tân Bình, TP. Hồ Chí Minh</p>
+					<p>Hotline:1800 1525</p>
+					<p>Email: arena@aprotrain.com</p>
+			</div>
+			<div class="col-3 col-3-footer">
+					<h4>Arena Hồ Văn Huê</h4>
+					<p>43R/12, Hồ Văn Huê, P. 9, Q. Phú Nhuận, </p><p> TP.Hồ Chí Minh</p>
+					<p>Hotline: 1800 6325</p>
+					<p>Email: arena@aprotrain.com</p>
+			</div>
+			<div class="col-3 col-3-footer">
+					<h4>Arena Tân Bình</h4>
+					<p>Số 6 Tân Kỳ Tân Quý (gần Etown), </p><p> Q.Tân Bình, TP. Hồ Chí Minh</p>
+					<p>Hotline: 1800 2074</p>
+					<p>Email: arena@aprotrain.com</p>
+			</div>
+			<div class="col-3">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15675.278956151136!2d106.64092014999999!3d10.825103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752974893abdf5%3A0x1f1405c13499590b!2zU8OibiBnb2xmIFTDom4gU8ahbiBOaOG6pXQ!5e0!3m2!1svi!2s!4v1746690242269!5m2!1svi!2s" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+		</div>
+		</div>
+	</footer>
+
+</html>
